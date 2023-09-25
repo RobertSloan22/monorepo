@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "mern full stack",
-  "main": "index.js",
+  "main": "server.js",
   "engines": {
     "node": "14.x"
   },
