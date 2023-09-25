@@ -5,7 +5,7 @@
   "description": "User Authentication workflow made with the MERN stack",
   "main": "server.js",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "scripts": {
     "start": "node server.js"
