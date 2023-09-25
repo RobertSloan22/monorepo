@@ -10,7 +10,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from'react-bootstrap/Card';
 import Button from'react-bootstrap/Button';
-import LoginButton from '../components/LoginButton';
 
 const LoginScreen = () => {
   const { loading, userInfo, error } = useSelector((state) => state.auth)
@@ -83,7 +82,6 @@ const LoginScreen = () => {
         <Col xs={20} md={18}>
           <Card>
             <Card.Body>
-              <LoginButton /> 
               </Card.Body>
             </Card>
           </Col>  
