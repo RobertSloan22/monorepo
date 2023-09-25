@@ -9,9 +9,9 @@
   },
 "scripts": {
   "build:digitalocean": "npm install --production=false && npm run build && npm ci",
-    "start": "node backend/server",
-    "build": "npm run build --prefix frontend",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  "start": "node backend/server",
+  "build:digitalocean": "npm install && npm run build",
+  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
     "type": "git",
