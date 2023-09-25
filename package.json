@@ -1,29 +1,38 @@
 {
-  "name": "mit-mern",
+  "name": "redux-user-auth",
   "version": "1.0.0",
   "type": "module",
-  "description": "mernfullstack",
+  "description": "User Authentication workflow made with the MERN stack",
   "main": "index.js",
-  "engines": {
-    "node": "16.x"
-  },
-"scripts": {
-  "start": "node backend/server",
-  "start/frontend": "npm run dev",
-  "build:digitalocean": "npm install && npm run build",
-  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/Chinwike1/redux-user-auth.git"
   },
   "keywords": [],
-  "author": "Robert Sloan",
+  "author": "",
   "license": "MIT",
   "bugs": {
     "url": ""
   },
   "homepage": "",
-  "dependencies": 
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.5"
+  }
 }
-  
