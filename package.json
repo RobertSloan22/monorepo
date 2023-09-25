@@ -1,13 +1,14 @@
 {
-  "name": "redux-user-auth",
+  "name": "mit-mern",
   "version": "1.0.0",
   "type": "module",
-  "description": "mern full stack",
-  "main": "server.js",
+  "description": "mernfullstack",
+  "main": "index.js",
   "engines": {
     "node": "16.x"
   },
-  "scripts": {
+"scripts": {
+  "build:digitalocean": "npm install --production=false && npm run build && npm ci",
     "start": "node backend/server",
     "build": "npm run build --prefix frontend",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
